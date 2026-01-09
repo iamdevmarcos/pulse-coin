@@ -11,8 +11,6 @@ interface BinanceTradePayload {
   T: number;
 }
 
-const BINANCE_WS_URL = process.env.BINANCE_WS_URL || '';
-
 export class BinanceWebSocketAdapter implements IMarketConnector {
   private ws: WebSocket | null = null;
   private tickCallback: ((data: RawTick) => void) | null = null;
@@ -29,7 +27,7 @@ export class BinanceWebSocketAdapter implements IMarketConnector {
 
     this.isConnecting = true;
     const streams = symbols.map((symbol) => `${symbol.toLowerCase()}@trade`).join('/');
-    const url = `${BINANCE_WS_URL}/stream?streams=${streams}`;
+    const url = `wss://stream.binance.com:9443/stream?streams=${streams}`; // public binance websocket url ;)
 
     console.log(`[BinanceAdapter] Connecting to ${url}`);
 
