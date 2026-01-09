@@ -10,7 +10,7 @@ async function bootstrap() {
   const port = process.env.PORT || 3001;
   await app.listen(port);
   
-  console.log(`\nPulseX is running at http://localhost:${port}`);
+  console.log(`\nPulseCoin is running at http://localhost:${port}`);
   console.log(`WebSocket endpoint: ws://localhost:${port}/prices\n`);
 }
 

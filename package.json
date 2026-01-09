@@ -1,7 +1,7 @@
 {
   "name": "cripto-bun",
   "version": "1.0.0",
-  "description": "",
+  "description": "Real-time cryptocurrency market data engine built with Bun and NestJS",
   "main": "dist/src/main",
   "scripts": {
     "build": "nest build",

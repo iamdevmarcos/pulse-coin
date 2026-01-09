@@ -5,7 +5,7 @@ import { MarketIngestionService } from './market/ingestion/services/market-inges
 import { PriceProcessorService } from './price/processing/services/price-processor.service';
 import { IMarketConnector, RawTick } from './market/ingestion/interfaces';
 
-describe('PulseX Integration Tests', () => {
+describe('PulseCoin Integration Tests', () => {
   let eventBus: InMemoryEventBus;
   let ingestionService: MarketIngestionService;
   let processorService: PriceProcessorService;
