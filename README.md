@@ -4,7 +4,7 @@
 
 `#bun #nestjs #event-driven #crypto #websocket #real-time #typescript`
 
-<img src="src/assets/static/preview.png" alt="PulseCoin Preview" width="600"/>
+<img src="src/assets/static/previewnew.png" alt="PulseCoin Preview" width="600"/>
 
 ---
 
