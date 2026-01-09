@@ -7,7 +7,9 @@
     "build": "nest build",
     "start": "nest start",
     "start:dev": "nest start --watch",
-    "start:prod": "node ."
+    "start:prod": "node .",
+    "test": "bun test",
+    "test:watch": "bun test --watch"
   },
   "keywords": [],
   "author": "",
@@ -17,12 +19,19 @@
     "@nestjs/common": "^11.1.11",
     "@nestjs/core": "^11.1.11",
     "@nestjs/platform-express": "^11.1.11",
-    "reflect-metadata": "^0.2.2"
+    "@nestjs/websockets": "^11.1.11",
+    "@nestjs/platform-ws": "^11.1.11",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1",
+    "ws": "^8.16.0"
   },
   "devDependencies": {
     "@nestjs/cli": "^11.0.14",
     "@nestjs/schematics": "^11.0.9",
+    "@nestjs/testing": "^11.1.11",
+    "@types/bun": "latest",
     "@types/node": "^25.0.3",
+    "@types/ws": "^8.5.10",
     "typescript": "^5.9.3"
   }
 }
